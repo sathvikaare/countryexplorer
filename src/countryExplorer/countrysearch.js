@@ -27,7 +27,7 @@ const SearchCountry = () => {
 
   const inputHandler = (e) => {
     setSearchValue(e.target.value);
-    setCurrentPage(1); // Reset to the first page when the search value changes
+    setCurrentPage(1);
   };
 
   const filteredUsersBySearch = countryDetails.filter((user) =>

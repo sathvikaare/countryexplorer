@@ -11,7 +11,7 @@ const EachCountryData = () => {
 
   useEffect(() => {
     fetchCountryDetails();
-  }, [countryName]); // Include countryName in dependencies
+  }, [countryName]); 
 
   const fetchCountryDetails = async () => {
     try {
@@ -20,7 +20,7 @@ const EachCountryData = () => {
       setLoading(false);
     } catch (error) {
       console.error("Error fetching country details", error);
-      setLoading(false); // Stop loading in case of error too
+      setLoading(false);
     }
   };
 

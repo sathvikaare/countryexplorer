@@ -109,32 +109,32 @@
 }
 
 @media (max-width: 480px) {
-  /* Mobile-specific styles for screens 576px and below */
+  
   .background-container {
     padding: 10px;
   }
 
   .card {
-    width: 40%; /* Adjust width for mobile */
-    margin-bottom: 15px; /* Spacing between cards */
+    width: 43%; 
+    margin-bottom: 15px; 
   }
 
   .card img {
-    height: 120px; /* Adjusted height */
+    height: 120px; 
   }
 
   .view-more-button {
-    padding: 5px 10px; /* Slightly smaller button */
-    font-size: 14px; /* Smaller font size for button */
+    padding: 5px 10px; 
+    font-size: 14px; 
   }
 
   .pagination {
-    /* Stack pagination vertically */
+   
     align-items: center;
   }
 
   .page-link {
     padding: 1px 2px;
-    font-size: 10px; /* Reduced font size for pagination */
+    font-size: 10px; 
   }
 }
