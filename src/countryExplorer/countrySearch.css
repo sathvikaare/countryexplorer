@@ -1,0 +1,140 @@
+
+.background-container {
+  background-color: #f0f2f5;
+  /* min-height: 100vh; */
+  padding: 20px;
+  background-image: url("https://cdn.wallpapersafari.com/47/19/ItDEyO.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card {
+  width: 230px;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: #ffffff; 
+  backdrop-filter: blur(4px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 16px; 
+  font-weight: 600;
+  margin-bottom: 8px; 
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 5px; 
+  text-align: center;
+}
+
+.view-more-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-more-button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-link {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 2px 4px;
+  margin:0px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.page-link:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-item a {
+  color: #ffffff;
+  font-weight: 550;
+}
+
+@media (max-width: 480px) {
+  /* Mobile-specific styles for screens 576px and below */
+  .background-container {
+    padding: 10px;
+  }
+
+  .card {
+    width: 40%; /* Adjust width for mobile */
+    margin-bottom: 15px; /* Spacing between cards */
+  }
+
+  .card img {
+    height: 120px; /* Adjusted height */
+  }
+
+  .view-more-button {
+    padding: 5px 10px; /* Slightly smaller button */
+    font-size: 14px; /* Smaller font size for button */
+  }
+
+  .pagination {
+    /* Stack pagination vertically */
+    align-items: center;
+  }
+
+  .page-link {
+    padding: 1px 2px;
+    font-size: 10px; /* Reduced font size for pagination */
+  }
+}
